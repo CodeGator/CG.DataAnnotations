@@ -71,6 +71,7 @@ steps:
     nuGetFeedType: 'external'
     publishFeedCredentials: 'NUGET.ORG'
     verbosityPush: 'Quiet'
+    allowPackageConflicts: true    
 
 - powershell: |
     choco install docfx -y
