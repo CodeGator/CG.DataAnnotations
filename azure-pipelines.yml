@@ -68,6 +68,7 @@ steps:
     publishVstsFeed: 'codegator'
     versioningScheme: 'off'
     allowPackageConflicts: true    
+    arguments: -SkipDuplicate  
     
 - task: NuGetCommand@2
   displayName: 'nuget external push'
@@ -77,7 +78,8 @@ steps:
     nuGetFeedType: 'external'
     publishFeedCredentials: 'NUGET.ORG'
     versioningScheme: 'off'
-    allowPackageConflicts: true    
+    allowPackageConflicts: true 
+    arguments: -SkipDuplicate  
 
 - powershell: |
     choco install docfx -y
