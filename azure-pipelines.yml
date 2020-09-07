@@ -68,8 +68,7 @@ steps:
     publishVstsFeed: 'codegator'
     versioningScheme: 'off'
     allowPackageConflicts: true    
-    arguments: -SkipDuplicate  
-    
+        
 - task: NuGetCommand@2
   displayName: 'nuget external push'
   inputs:
