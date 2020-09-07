@@ -1,6 +1,10 @@
 # CG.DataAnnotations: 
 
 ---
+[![Build Status](https://dev.azure.com/codegator/CG.DataAnnotations/_apis/build/status/CodeGator.CG.DataAnnotations?branchName=master)](https://dev.azure.com/codegator/CG.DataAnnotations/_build/latest?definitionId=1&branchName=master)
+[![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.DataAnnotations/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/CG.DataAnnotations.svg?style=flat)](https://nuget.org/packages/CG.DataAnnotations)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.DataAnnotations/1)
 
 #### What does it do?
 The package contains general purpose data annotation extensions used by other CodeGator packages.
