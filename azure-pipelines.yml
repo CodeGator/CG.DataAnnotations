@@ -49,6 +49,34 @@ steps:
     summaryFileLocation: 'src/**/coverage.cobertura.xml'
     pathToSources: '$(SolutionPath)'
 
+- powershell: |
+    choco install docfx -y
+    if ($lastexitcode -ne 0) {
+      throw ("Error installing docfx")
+    }
+  displayName: "Install docfx"
+
+- powershell: |
+    docfx docfx/docfx.json
+    if ($lastexitcode -ne 0) {
+      throw ("Error generating document")
+    }
+  displayName: "Generate docs"
+
+- powershell: | 
+    $env:GIT_REDIRECT_STDERR = '2>&1'
+    git config --global credential.helper store
+    Add-Content "$HOME\.git-credentials" "https://$(GIT_PAT):x-oauth-basic@github.com`n"
+    git config --global user.email $(OP_USER_EMAIL)
+    git config --global user.name $(OP_USER)
+    git clone https://github.com/CodeGator/CG.DataAnnotations.git -b gh-pages origin_site -q
+    Copy-Item origin_site/.git _site -recurse
+    CD _site
+    git add -A
+    git commit -m "CI Updates [skip ci]" -q
+    git push origin gh-pages -q
+  displayName: "Publish docs"  
+
 - task: DotNetCoreCLI@2
   displayName: "dotnet pack"
   inputs:
@@ -57,7 +85,7 @@ steps:
     packagesToPack: '$(SolutionPath).sln'
     nobuild: true
     versioningScheme: 'off'    
-
+  
 - task: NuGetCommand@2
   displayName: 'nuget internal push'
   inputs:
@@ -80,29 +108,3 @@ steps:
     allowPackageConflicts: true 
     arguments: -SkipDuplicate  
 
-- powershell: |
-    choco install docfx -y
-    if ($lastexitcode -ne 0) {
-      throw ("Error installing docfx")
-    }
-  displayName: "Install docfx"
-
-- powershell: |
-    docfx docfx/docfx.json
-    if ($lastexitcode -ne 0) {
-      throw ("Error generating document")
-    }
-  displayName: "Generate docs"
-
-- powershell: | 
-    $env:GIT_REDIRECT_STDERR = '2>&1'
-    git config --global credential.helper store
-    Add-Content "$HOME\.git-credentials" "https://$(GIT_PAT):x-oauth-basic@github.com`n"
-    git config --global user.email $(OP_USER_EMAIL)
-    git config --global user.name $(OP_USER)
-    git clone https://github.com/CodeGator/$(SolutionName).git -b gh-pages origin_site -q
-    Copy-Item origin_site/.git _site -recurse
-    CD _site
-    git commit -a -m "CI Updates" -q
-    git push origin gh-pages -q
-  displayName: "Publish docs"  
