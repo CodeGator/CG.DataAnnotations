@@ -38,7 +38,7 @@ namespace CG.DataAnnotations
                 ).Any();
 
             // Return the results.
-            return results;
+            return !results;
         }
 
         // *******************************************************************

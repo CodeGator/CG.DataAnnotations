@@ -87,7 +87,6 @@ namespace CG.DataAnnotations
         /// </summary>
         [TestMethod]
         [TestCategory("Unit")]
-        [ExpectedException(typeof(ValidationException))]
         public void ValidatableObjectExtensions_Validate()
         {
             // Arrange ...
