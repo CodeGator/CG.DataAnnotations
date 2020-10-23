@@ -7,18 +7,6 @@ references:
   commentId: N:CG.DataAnnotations
   fullName: CG.DataAnnotations
   nameWithType: CG.DataAnnotations
-- uid: CG.DataAnnotations.Options
-  name: CG.DataAnnotations.Options
-  href: api/CG.DataAnnotations.Options.html
-  commentId: N:CG.DataAnnotations.Options
-  fullName: CG.DataAnnotations.Options
-  nameWithType: CG.DataAnnotations.Options
-- uid: CG.DataAnnotations.Options.OptionsBase
-  name: OptionsBase
-  href: api/CG.DataAnnotations.Options.OptionsBase.html
-  commentId: T:CG.DataAnnotations.Options.OptionsBase
-  fullName: CG.DataAnnotations.Options.OptionsBase
-  nameWithType: OptionsBase
 - uid: CG.DataAnnotations.ValidatableObject
   name: ValidatableObject
   href: api/CG.DataAnnotations.ValidatableObject.html

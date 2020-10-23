@@ -14,35 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.Options.OptionsBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.Options.OptionsBase.html",
-          "hash": "Lp1EgPwnAZu2PvFD/wzuUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.Options.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.Options.html",
-          "hash": "g0vxalFJM4cQS3/77ZJbfA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.DataAnnotations.ValidatableObject.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.DataAnnotations.ValidatableObject.html",
-          "hash": "eH7tBpnPM5dVLrZ/HNhChQ=="
+          "hash": "VvdFKEBhbHcorfnYJA6hYQ=="
         }
       },
       "is_incremental": false,
@@ -78,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zsIaSpjk6cmRhO43ZZ5hvw=="
+          "hash": "ZppgJEYqwitKBUs7ChIYDA=="
         }
       },
       "is_incremental": false,
@@ -153,7 +129,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
