@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using CG.Validations;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
@@ -25,6 +26,9 @@ namespace CG.DataAnnotations
             ValidationContext validationContext
             )
         {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(validationContext, nameof(validationContext));
+
             // Create a place to hold validation results.
             var results = new List<ValidationResult>();
 
