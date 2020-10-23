@@ -9,8 +9,11 @@
 #### What does it do?
 The package contains general purpose data annotation extensions used by other CodeGator packages.
 
+#### Commonly used types:
+* CG.DataAnnotations.ValidatableObject
+* CG.DataAnnotations.ValidatableObjectExtensions
+
 #### What platform(s) does it support?
-* .NET 4.61x or above
 * .NET Standard 2.x or higher
 
 #### How do I install it?

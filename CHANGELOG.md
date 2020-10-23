@@ -5,5 +5,8 @@
 
 * I copied the code from CG.Core.
 
-* I moved options to another package.
+* I moved OptionsBase to CG.Options.
+
+* I dropped support for .net 4.61
+
 
