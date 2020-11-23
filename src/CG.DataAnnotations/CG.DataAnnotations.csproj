@@ -22,12 +22,12 @@ Platforms supported:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Validations" Version="2020.1.42" />
+    <PackageReference Include="CG.Validations" Version="2020.1.45" />
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.3.37">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
