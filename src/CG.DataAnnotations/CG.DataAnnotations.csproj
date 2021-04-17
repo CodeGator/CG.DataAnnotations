@@ -21,7 +21,7 @@ Platforms supported:
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\5.0\CG.DataAnnotations.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net5.0\CG.DataAnnotations.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
