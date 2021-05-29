@@ -13,78 +13,6 @@
       "is_incremental": false
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.EmailAddressListAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.EmailAddressListAttribute.html",
-          "hash": "sEnoZkbY7nB7QOpgLAmIOSGky+L4u9RN5rLcda2isZw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.PhoneListAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.PhoneListAttribute.html",
-          "hash": "4yeCzj2qJwossHXCal3fbRO6j6QAbCL3Dv6zeJcm5Xk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.ValidatableObject.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.ValidatableObject.html",
-          "hash": "Dck9TGu5Jps1jpiP+uFRHm4FLnBUIFLV9O4/EIb4ixg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.ValidatableObjectExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.ValidatableObjectExtensions.html",
-          "hash": "odJFDA+Gh4jV4M2YDiKXMHPhIIyBhAGo2OM1UAGzroc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.html",
-          "hash": "d0RlLx30uuhgLqE5+xJa0uKTS5VglfOufXhL2nd+/fM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "7DLs6aFWttdrnQr6+KMlReLTnoQSiAwmblks4enRmbg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
@@ -126,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "u1TNfW4+ctHQSkp0odOsNwsMFolPeXSqlwULFfMUMk4="
+          "hash": "faickayqPnQKHA8RoWRUpLGP5pml6CG5m/haNJHXZQc="
         }
       },
       "is_incremental": false,
@@ -148,12 +76,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
