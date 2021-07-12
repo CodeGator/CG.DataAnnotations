@@ -13,12 +13,84 @@
       "is_incremental": false
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataAnnotations.EmailAddressListAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataAnnotations.EmailAddressListAttribute.html",
+          "hash": "DjiLh3FN/kR5AW5VAvRB5YL7X4FWOQYpg2E1Cci9NcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataAnnotations.PhoneListAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataAnnotations.PhoneListAttribute.html",
+          "hash": "krfDtmCBzsbJuZI5y7MtJb/XWZwZaF1jp1R6N/ixAU8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataAnnotations.ValidatableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataAnnotations.ValidatableObject.html",
+          "hash": "x77xvOs5SXiNzz2GUGy2geV0jTR6wY0w58DMF91vm4E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataAnnotations.ValidatableObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataAnnotations.ValidatableObjectExtensions.html",
+          "hash": "8gfc5KIQ0Jdyb5sj8n+xBRY1U5fzAIT5gFaUaZ9ajcw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataAnnotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataAnnotations.html",
+          "hash": "zBNbW9cN59jtYVS6a0JmxEpG9AiKjnObkn26ent+j2w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "7DLs6aFWttdrnQr6+KMlReLTnoQSiAwmblks4enRmbg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "OgOIdp+68sKjWkO8X7/eMKamv9SPvmhi1lIB7IfCk/4="
+          "hash": "3lFGsZn+vpYCWz7OututIOBGsz91XMn2mjINvNxc584="
         }
       },
       "is_incremental": false,
@@ -42,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "rZrmiY7C98zoqk+uNQ8skAs8HEvvhk1HXfk71Ot9gic="
+          "hash": "EnwaZ4oCD5Cg+4L21LqcMSvhOFrL05j2H2JEgMwk18E="
         }
       },
       "is_incremental": false,
@@ -54,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "faickayqPnQKHA8RoWRUpLGP5pml6CG5m/haNJHXZQc="
+          "hash": "u1TNfW4+ctHQSkp0odOsNwsMFolPeXSqlwULFfMUMk4="
         }
       },
       "is_incremental": false,
@@ -76,6 +148,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
