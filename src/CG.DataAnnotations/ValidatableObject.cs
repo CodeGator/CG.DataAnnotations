@@ -43,15 +43,38 @@ namespace CG.DataAnnotations
                     x => typeof(ValidationAttribute).IsAssignableFrom(x.AttributeType)
                     ))
                 {
-                    // Validate the property
+                    // Get the value of the property.
+                    var propValue = prop.GetValue(
+                        validationContext.ObjectInstance
+                        );
+
+                    // Validate the property value.
                     Validator.TryValidateProperty(
-                        prop.GetValue(validationContext.ObjectInstance),
+                        propValue,
                         new ValidationContext(this, null, null)
                         {
                             MemberName = prop.Name
                         },
                         results
                         );
+                }
+
+                // Is the property type itself validatable?
+                if (prop.PropertyType.IsAssignableTo(typeof(IValidatableObject)))
+                {
+                    // Get the value of the property.
+                    var propValue = prop.GetValue(
+                        validationContext.ObjectInstance
+                        );
+
+                    // Watch for NULL values!
+                    if (null != propValue)
+                    {
+                        // Recursively validate the object itself.
+                        results.AddRange(
+                            (propValue as IValidatableObject).Validate()
+                            );
+                    }
                 }
             }
 

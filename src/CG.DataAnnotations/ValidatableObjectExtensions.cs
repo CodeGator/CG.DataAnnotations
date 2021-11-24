@@ -32,7 +32,7 @@ namespace CG.DataAnnotations
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(validatableObject, nameof(validatableObject));
 
-            // Validate ourselves.
+            // Do we have errors?
             var results = validatableObject.Validate(
                 new ValidationContext(validatableObject)
                 ).Any();
