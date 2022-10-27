@@ -1,10 +1,5 @@
-﻿using CG.Validations;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-
-namespace CG.DataAnnotations
+﻿
+namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
     /// This class validates lists of phone numbers.
