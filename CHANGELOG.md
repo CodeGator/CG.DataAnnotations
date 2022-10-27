@@ -4,6 +4,8 @@
 ## 2022.1
 
 * I changed the framework to .net 6.0
+* I added the ValidatorEx class
+* I changed the namespace to System.ComponentModel.DataAnnotations
 
 ## 2021.3
 
