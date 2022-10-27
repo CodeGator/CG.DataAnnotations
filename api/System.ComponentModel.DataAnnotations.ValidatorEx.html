@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ValidatableObjectExtensions
+    <title>Class ValidatorEx
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ValidatableObjectExtensions
+    <meta name="title" content="Class ValidatorEx
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,19 +78,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.DataAnnotations.ValidatableObjectExtensions">
+            <article class="content wrap" id="_content" data-uid="System.ComponentModel.DataAnnotations.ValidatorEx">
   
   
-  <h1 id="CG_DataAnnotations_ValidatableObjectExtensions" data-uid="CG.DataAnnotations.ValidatableObjectExtensions" class="text-break">Class ValidatableObjectExtensions
+  <h1 id="System_ComponentModel_DataAnnotations_ValidatorEx" data-uid="System.ComponentModel.DataAnnotations.ValidatorEx" class="text-break">Class ValidatorEx
   </h1>
-  <div class="markdown level0 summary"><p>This class contains extension methods related to the <span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span>
-type.</p>
+  <div class="markdown level0 summary"><p>This class provides methods we wish the <span class="xref">System.ComponentModel.DataAnnotations.Validator</span> class
+had provided.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ValidatableObjectExtensions</span></div>
+    <div class="level1"><span class="xref">ValidatorEx</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,22 +116,22 @@ type.</p>
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.DataAnnotations.html">CG.DataAnnotations</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.ComponentModel.DataAnnotations.html">System.ComponentModel.DataAnnotations</a></h6>
   <h6><strong>Assembly</strong>: CG.DataAnnotations.dll</h6>
-  <h5 id="CG_DataAnnotations_ValidatableObjectExtensions_syntax">Syntax</h5>
+  <h5 id="System_ComponentModel_DataAnnotations_ValidatorEx_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ValidatableObjectExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ValidatorEx</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="CG_DataAnnotations_ValidatableObjectExtensions_IsValid_" data-uid="CG.DataAnnotations.ValidatableObjectExtensions.IsValid*"></a>
-  <h4 id="CG_DataAnnotations_ValidatableObjectExtensions_IsValid_System_ComponentModel_DataAnnotations_IValidatableObject_" data-uid="CG.DataAnnotations.ValidatableObjectExtensions.IsValid(System.ComponentModel.DataAnnotations.IValidatableObject)">IsValid(IValidatableObject)</h4>
-  <div class="markdown level1 summary"><p>This method determines if the object is currently valid.</p>
+  <a id="System_ComponentModel_DataAnnotations_ValidatorEx_TryValidateObject_" data-uid="System.ComponentModel.DataAnnotations.ValidatorEx.TryValidateObject*"></a>
+  <h4 id="System_ComponentModel_DataAnnotations_ValidatorEx_TryValidateObject_System_Object_System_ComponentModel_DataAnnotations_ValidationContext_System_Nullable_ICollection_System_ComponentModel_DataAnnotations_ValidationResult___System_Boolean_System_Boolean_" data-uid="System.ComponentModel.DataAnnotations.ValidatorEx.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Nullable{ICollection{System.ComponentModel.DataAnnotations.ValidationResult}},System.Boolean,System.Boolean)">TryValidateObject(Object, ValidationContext, Nullable&lt;ICollection&lt;ValidationResult&gt;&gt;, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>This method tests whether the given object instance is valid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsValid(this IValidatableObject validatableObject)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryValidateObject(object instance, ValidationContext validationContext, ICollection&lt;ValidationResult&gt;? validationResults, bool validateAllProperties, bool recursive)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,9 +144,35 @@ type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></td>
-        <td><span class="parametername">validatableObject</span></td>
-        <td></td>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The object instance to test.  It cannot be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationContext</span></td>
+        <td><span class="parametername">validationContext</span></td>
+        <td><p>Describes the object to validate and provides services and context for the validators.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">ICollection</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;&gt;</td>
+        <td><span class="parametername">validationResults</span></td>
+        <td><p>Optional collection to receive <span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>s for the failures.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validateAllProperties</span></td>
+        <td><p>If <code>true</code>, also evaluates all properties of the object (this process is not
+recursive over properties of the properties).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>Used to validate decorated properties on child objects.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -161,55 +187,28 @@ type.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if the object is valid; false otherwise.</p>
+        <td><p><code>true</code> if the object is valid, <code>false</code> if any validation errors are encountered.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-the argument is missing, or null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_DataAnnotations_ValidatableObjectExtensions_ThrowIfInvalid_" data-uid="CG.DataAnnotations.ValidatableObjectExtensions.ThrowIfInvalid*"></a>
-  <h4 id="CG_DataAnnotations_ValidatableObjectExtensions_ThrowIfInvalid_System_ComponentModel_DataAnnotations_IValidatableObject_" data-uid="CG.DataAnnotations.ValidatableObjectExtensions.ThrowIfInvalid(System.ComponentModel.DataAnnotations.IValidatableObject)">ThrowIfInvalid(IValidatableObject)</h4>
-  <div class="markdown level1 summary"><p>This method validates the current object and throws an exception
-with the contents of any failing validations.</p>
+  <h5 id="System_ComponentModel_DataAnnotations_ValidatorEx_TryValidateObject_System_Object_System_ComponentModel_DataAnnotations_ValidationContext_System_Nullable_ICollection_System_ComponentModel_DataAnnotations_ValidationResult___System_Boolean_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method evaluates all <span class="xref">System.ComponentModel.DataAnnotations.ValidationAttribute</span>s attached to the object instance's type.  It also
+checks to ensure all properties marked with <span class="xref">System.ComponentModel.DataAnnotations.RequiredAttribute</span> are set.  If
+<code data-dev-comment-type="paramref" class="paramref">validateAllProperties</code>
+is <code>true</code>, this method will also evaluate the <span class="xref">System.ComponentModel.DataAnnotations.ValidationAttribute</span>s for all the immediate
+properties
+of this object.  This process is recursive if the <code data-dev-comment-type="paramref" class="paramref">recursive</code> property is set to <code>true</code>.</p>
+<p>
+    If <code data-dev-comment-type="paramref" class="paramref">validationResults</code> is null, then execution will abort upon the first validation
+    failure.  If <code data-dev-comment-type="paramref" class="paramref">validationResults</code> is non-null, then all validation attributes will be
+    evaluated.
+</p>
+<p>
+    For any given property, if it has a <span class="xref">System.ComponentModel.DataAnnotations.RequiredAttribute</span> that fails validation, no other validators
+    will be evaluated for that property.
+</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ThrowIfInvalid(this IValidatableObject validatableObject)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></td>
-        <td><span class="parametername">validatableObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -220,75 +219,14 @@ with the contents of any failing validations.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-the argument is missing, or null.</p>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>When <code data-dev-comment-type="paramref" class="paramref">instance</code> is null.</p>
 </td>
       </tr>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationException</span></td>
-        <td><p>This exception is thrown if
-any of the validation checks fail.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_DataAnnotations_ValidatableObjectExtensions_Validate_" data-uid="CG.DataAnnotations.ValidatableObjectExtensions.Validate*"></a>
-  <h4 id="CG_DataAnnotations_ValidatableObjectExtensions_Validate_System_ComponentModel_DataAnnotations_IValidatableObject_" data-uid="CG.DataAnnotations.ValidatableObjectExtensions.Validate(System.ComponentModel.DataAnnotations.IValidatableObject)">Validate(IValidatableObject)</h4>
-  <div class="markdown level1 summary"><p>This method validates the current object and returns the result
-of any failing validations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ValidationResult&gt; Validate(this IValidatableObject validatableObject)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></td>
-        <td><span class="parametername">validatableObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
-        <td><p>A list of failing validations.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-the argument is missing, or null.</p>
+        <td><p>When <code data-dev-comment-type="paramref" class="paramref">instance</code> doesn't match the
+<span class="xref">System.ComponentModel.DataAnnotations.ValidationContext.ObjectInstance</span>on <code data-dev-comment-type="paramref" class="paramref">validationContext</code>.</p>
 </td>
       </tr>
     </tbody>

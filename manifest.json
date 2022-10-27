@@ -14,11 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.EmailAddressListAttribute.yml",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.EmailAddressListAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.DataAnnotations.EmailAddressListAttribute.html",
-          "hash": "aW7gpjXMLPdXhCgeWLeW7m3X8V/tiPvnr3xoF3kLY0k="
+          "relative_path": "api/System.ComponentModel.DataAnnotations.EmailAddressListAttribute.html",
+          "hash": "1cJCO0/s5mzkfs8Hv4nw3QK1BLWpALY0OT5eQT9Q88o="
         }
       },
       "is_incremental": false,
@@ -26,11 +26,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.PhoneListAttribute.yml",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.PhoneListAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.DataAnnotations.PhoneListAttribute.html",
-          "hash": "0KOAIzm+eZOmVP68LmAKqde4fH6sh1tGgrqIqxGsSK8="
+          "relative_path": "api/System.ComponentModel.DataAnnotations.PhoneListAttribute.html",
+          "hash": "vEk9Tz2jgVmfaK8ly7RcOqiJhIXNyGk4Op3XPQtl64I="
         }
       },
       "is_incremental": false,
@@ -38,11 +38,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.ValidatableObject.yml",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.DataAnnotations.ValidatableObject.html",
-          "hash": "H4Kty7ZupUZ8AZikw8LPyExxbzruPzOm4eXufTl7Its="
+          "relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObject.html",
+          "hash": "wa7+fDF7do1Sy4nA2WlKoJXljDTEKCLTyx2KBu/UkDs="
         }
       },
       "is_incremental": false,
@@ -50,11 +50,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.ValidatableObjectExtensions.yml",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObjectExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.DataAnnotations.ValidatableObjectExtensions.html",
-          "hash": "dPluPPuo4mBZcMMnEzV+h1K+I+aJuBrAp2/4613aGKg="
+          "relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObjectExtensions.html",
+          "hash": "4HC19XFLfr5YgwNqAXHNf0Qw0z/GUTEiDAQAhP7Tenw="
         }
       },
       "is_incremental": false,
@@ -62,11 +62,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.yml",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.ValidatorEx.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.DataAnnotations.html",
-          "hash": "gOm02FQLq5RWtTaD7abJwr36jkBItfaUR8mOxvYMuPg="
+          "relative_path": "api/System.ComponentModel.DataAnnotations.ValidatorEx.html",
+          "hash": "zpblBNCTa3IPi4/izwBy1gcfw9s+cuLPOKwqFddNhqk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ComponentModel.DataAnnotations.html",
+          "hash": "zlDXTfdnVvems+QAR5Bsd6Ppcev8+2AzECsQsalejTc="
         }
       },
       "is_incremental": false,
@@ -78,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7DLs6aFWttdrnQr6+KMlReLTnoQSiAwmblks4enRmbg="
+          "hash": "og6Y+1dUquqs8YnddLoEnZPw4dTzUQ6VsZtgARf4JUc="
         }
       },
       "is_incremental": false,
@@ -126,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "u1TNfW4+ctHQSkp0odOsNwsMFolPeXSqlwULFfMUMk4="
+          "hash": "ETNZiCRvK+fhUjyepVvwdhCQr6a2Tt6/oJngdz/57Ac="
         }
       },
       "is_incremental": false,
@@ -153,7 +165,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
