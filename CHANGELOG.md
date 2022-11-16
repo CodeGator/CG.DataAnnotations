@@ -1,6 +1,10 @@
 # CG.DataAnnotations change log
 ---
 
+## 2023.1
+
+* I moved the ValidatorEx class to CG.Validations.
+
 ## 2022.1
 
 * I changed the framework to .net 6.0
