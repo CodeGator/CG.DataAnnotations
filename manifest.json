@@ -38,47 +38,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObject.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObject.html",
-          "hash": "wa7+fDF7do1Sy4nA2WlKoJXljDTEKCLTyx2KBu/UkDs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObjectExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/System.ComponentModel.DataAnnotations.ValidatableObjectExtensions.html",
-          "hash": "4HC19XFLfr5YgwNqAXHNf0Qw0z/GUTEiDAQAhP7Tenw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/System.ComponentModel.DataAnnotations.ValidatorEx.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/System.ComponentModel.DataAnnotations.ValidatorEx.html",
-          "hash": "zpblBNCTa3IPi4/izwBy1gcfw9s+cuLPOKwqFddNhqk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/System.ComponentModel.DataAnnotations.yml",
       "output": {
         ".html": {
           "relative_path": "api/System.ComponentModel.DataAnnotations.html",
-          "hash": "zlDXTfdnVvems+QAR5Bsd6Ppcev8+2AzECsQsalejTc="
+          "hash": "Rr99BfLfGZScDVNa1xbJBDLadh45djH/sTMrI2w9hlc="
         }
       },
       "is_incremental": false,
@@ -90,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "og6Y+1dUquqs8YnddLoEnZPw4dTzUQ6VsZtgARf4JUc="
+          "hash": "ZhJJaoYUFZO5ChJ0vKYZoFmlozQbrTL69+UN44ZItF4="
         }
       },
       "is_incremental": false,
@@ -165,7 +129,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
