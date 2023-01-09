@@ -38,11 +38,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.RequiredWhenAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ComponentModel.DataAnnotations.RequiredWhenAttribute.html",
+          "hash": "mVdwDVYkmwTCaPFngS3wQ1CjLddCLdJFeVQw1Ljfdr0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/System.ComponentModel.DataAnnotations.yml",
       "output": {
         ".html": {
           "relative_path": "api/System.ComponentModel.DataAnnotations.html",
-          "hash": "Rr99BfLfGZScDVNa1xbJBDLadh45djH/sTMrI2w9hlc="
+          "hash": "OdP3SW27sSGnSX4+QTZ48uhxEwZSG1rV19+Up9T04c4="
         }
       },
       "is_incremental": false,
@@ -54,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ZhJJaoYUFZO5ChJ0vKYZoFmlozQbrTL69+UN44ZItF4="
+          "hash": "FoWRGykczmnTZFlRcj7w4mp1aC+u9zKjqJ0F4zV3ykQ="
         }
       },
       "is_incremental": false,
@@ -129,7 +141,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
