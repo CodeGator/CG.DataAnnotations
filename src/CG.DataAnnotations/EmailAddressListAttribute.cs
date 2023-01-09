@@ -38,7 +38,7 @@ public sealed class EmailAddressListAttribute : ValidationAttribute
     /// <param name="value">The value of the object to validate.</param>
     /// <returns>true if the specified value is valid; false otherwise.</returns>
     public override bool IsValid(
-        object value
+        object? value
         )
     {
         // Validate the parameters before attempting to use them.
@@ -55,7 +55,7 @@ public sealed class EmailAddressListAttribute : ValidationAttribute
         }
         else if (value is string)
         {
-            var list = (value as string).Split(';');
+            var list = ((value as string) ?? "").Split(';');
             return (list != null && list.All(email => emailAttribute.IsValid(email)));
         }
         else

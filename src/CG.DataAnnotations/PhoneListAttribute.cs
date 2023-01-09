@@ -38,7 +38,7 @@ namespace System.ComponentModel.DataAnnotations
         /// <param name="value">The value of the object to validate.</param>
         /// <returns>true if the specified value is valid; false otherwise.</returns>
         public override bool IsValid(
-            object value
+            object? value
             )
         {
             // Validate the parameters before attempting to use them.
