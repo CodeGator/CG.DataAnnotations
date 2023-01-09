@@ -145,9 +145,9 @@ public class RequiredWhenAttribute : ValidationAttribute
         var hasError = false;
         if (bool.Equals(otherPropertyValue, Invert ? true : false))
         {
-            hasError = AllowEmptyStrings ||
-                !(value is string stringValue) ||
-                !string.IsNullOrWhiteSpace(stringValue);
+            hasError = !AllowEmptyStrings &&
+                (value is string stringValue) &&
+                string.IsNullOrWhiteSpace(stringValue);
         }            
 
         // Did the validation succeed?
