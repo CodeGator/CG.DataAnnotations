@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
-		<Company>BobbyGogs</Company>
+		<Company>CodeGator</Company>
 		<Authors>Martin Cook</Authors>
 		<Nullable>enable</Nullable>
 		<Description>
@@ -13,7 +13,7 @@
 		</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/CodeGator/CG.DataAnnotations</PackageProjectUrl>
-		<Copyright>Copyright © 2008 - 2022 by CodeGator. All rights reserved</Copyright>
+		<Copyright>Copyright © 2008 - 2023 by CodeGator. All rights reserved</Copyright>
 		<PackageTags>data annotations, CG.DataAnnotations, CodeGator</PackageTags>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
