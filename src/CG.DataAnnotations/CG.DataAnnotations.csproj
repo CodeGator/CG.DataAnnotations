@@ -29,7 +29,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CG.Validations" Version="2023.1.5" />
+		<PackageReference Include="CG.Validations" Version="2023.1.6" />
 		<PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
