@@ -14,35 +14,47 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.OneOrMoreDigitsAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html",
-          "hash": "KbLB5V8thOlHMXGM09SmC6ny4De3EM1C4kw4cgp2JqY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataAnnotations.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataAnnotations.html",
-          "hash": "TsfSyGnO3jijK70/oPd+Jc/b2dth57ra35zQG70I+D0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/System.ComponentModel.DataAnnotations.EmailAddressListAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "api/System.ComponentModel.DataAnnotations.EmailAddressListAttribute.html",
           "hash": "1cJCO0/s5mzkfs8Hv4nw3QK1BLWpALY0OT5eQT9Q88o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.OneOrMoreDigitsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ComponentModel.DataAnnotations.OneOrMoreDigitsAttribute.html",
+          "hash": "ND1ipFXq5tSc98p0JNHN+0DZm0PHszcw8G+KdxVonCM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.OneOrMoreNonAlphaAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ComponentModel.DataAnnotations.OneOrMoreNonAlphaAttribute.html",
+          "hash": "yc8H5QD0oWB149RWjvFyfRBN6PAoA1UPcdnOzRO95W4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.OneOrMoreUpperCaseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ComponentModel.DataAnnotations.OneOrMoreUpperCaseAttribute.html",
+          "hash": "Pd3ckc3aV7QJoHEhhj+1mO7sQ7SchYulsD+NtmzFgZ0="
         }
       },
       "is_incremental": false,
@@ -78,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/System.ComponentModel.DataAnnotations.html",
-          "hash": "OdP3SW27sSGnSX4+QTZ48uhxEwZSG1rV19+Up9T04c4="
+          "hash": "fFXRXYdPH9YaRrBi/9oTSUf0VOAUJBRhe9gIi3BZFiA="
         }
       },
       "is_incremental": false,
@@ -90,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "+R9GB2aSP15UXpUpcbIY8yqnJF/XP9gazNLoDyFD+Vo="
+          "hash": "3BToME5cKO7eeRm3jwIIA4I73Svki3UYLaK/Fpmx+JU="
         }
       },
       "is_incremental": false,
@@ -138,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "u1TNfW4+ctHQSkp0odOsNwsMFolPeXSqlwULFfMUMk4="
+          "hash": "ETNZiCRvK+fhUjyepVvwdhCQr6a2Tt6/oJngdz/57Ac="
         }
       },
       "is_incremental": false,
@@ -165,7 +177,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
