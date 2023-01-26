@@ -2,11 +2,12 @@
 namespace System.ComponentModel.DataAnnotations;
 
 /// <summary>
-/// This class validates a property that should contain one or more digits.
+/// This class validates a property that should contain one or more non
+/// alphanumeric character.
 /// </summary>
 
 [AttributeUsage(AttributeTargets.Property)]
-public class OneOrMoreDigitsAttribute : ValidationAttribute
+public class OneOrMoreNonAlphaAttribute : ValidationAttribute
 {
     // *******************************************************************
     // Constructors.
@@ -15,11 +16,11 @@ public class OneOrMoreDigitsAttribute : ValidationAttribute
     #region Constructors
 
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="OneOrMoreDigitsAttribute"/>
+    /// This constructor creates a new instance of the <see cref="OneOrMoreNonAlphaAttribute"/>
     /// class.
     /// </summary>
-    public OneOrMoreDigitsAttribute()
-        : base("'{0}' must have at least one digit ('0'-'9').")
+    public OneOrMoreNonAlphaAttribute()
+        : base("'{0}' must have at least one non alphanumeric character.")
     {
 
     }
@@ -52,8 +53,8 @@ public class OneOrMoreDigitsAttribute : ValidationAttribute
             return false;
         }
 
-        // Does the property have at least one digit?
-        if (!Regex.IsMatch($"{value}", "\\d+"))
+        // Does the property have at least one non alphanumeric?
+        if (!Regex.IsMatch($"{value}", "[^a-zA-Z0-9]+$"))
         {
             // The property is not valid.
             return false;
