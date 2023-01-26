@@ -1,11 +1,14 @@
 ﻿
-namespace System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
+
+namespace CG.DataAnnotations;
 
 /// <summary>
-/// This class validates lists of email addresses.
+/// This class validates a property that should contain one or more digits.
 /// </summary>
+
 [AttributeUsage(AttributeTargets.Property)]
-public sealed class EmailAddressListAttribute : ValidationAttribute
+public class OneOrMoreDigitsAttribute : ValidationAttribute
 {
     // *******************************************************************
     // Constructors.
@@ -14,11 +17,11 @@ public sealed class EmailAddressListAttribute : ValidationAttribute
     #region Constructors
 
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="EmailAddressListAttribute"/>
+    /// This constructor creates a new instance of the <see cref="OneOrMoreDigitsAttribute"/>
     /// class.
     /// </summary>
-    public EmailAddressListAttribute()
-        : base("'{0}' contains an invalid email address.")
+    public OneOrMoreDigitsAttribute()
+        : base("'{0}' must have at least one digit ('0'-'9').")
     {
 
     }
@@ -43,26 +46,24 @@ public sealed class EmailAddressListAttribute : ValidationAttribute
     {
         // Validate the parameters before attempting to use them.
         Guard.Instance().ThrowIfNull(value, nameof(value));
-
-        var emailAttribute = new EmailAddressAttribute();
-
-        // Validate based on the property type.
-
-        if (value is IEnumerable<string>)
+        
+        // Can we take a shortcut?
+        if (value is null)
         {
-            var sequence = value as IEnumerable<string>;
-            return (sequence != null && sequence.All(email => emailAttribute.IsValid(email)));
-        }
-        else if (value is string)
-        {
-            var list = ((value as string) ?? "").Split(';');
-            return (list != null && list.All(email => emailAttribute.IsValid(email)));
-        }
-        else
-        {
-            base.ErrorMessage = $"The property type: '{value?.GetType().Name}' can't be validated";
+            // The property is not valid.
             return false;
         }
+
+        // Does the property have at least one digit?
+        if (!Regex.IsMatch($"{value}", "^[0-9]*"))
+        {
+            // The property is not valid.
+            return false;
+        }
+
+        // The property is valid.
+        return true;
+
     }
 
     // *******************************************************************
