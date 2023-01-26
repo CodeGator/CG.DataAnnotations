@@ -2,11 +2,12 @@
 namespace System.ComponentModel.DataAnnotations;
 
 /// <summary>
-/// This class validates a property that should contain one or more digits.
+/// This class validates a property that should contain one or more upper
+/// case character.
 /// </summary>
 
 [AttributeUsage(AttributeTargets.Property)]
-public class OneOrMoreDigitsAttribute : ValidationAttribute
+public class OneOrMoreUpperCaseAttribute : ValidationAttribute
 {
     // *******************************************************************
     // Constructors.
@@ -15,11 +16,11 @@ public class OneOrMoreDigitsAttribute : ValidationAttribute
     #region Constructors
 
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="OneOrMoreDigitsAttribute"/>
+    /// This constructor creates a new instance of the <see cref="OneOrMoreUpperCaseAttribute"/>
     /// class.
     /// </summary>
-    public OneOrMoreDigitsAttribute()
-        : base("'{0}' must have at least one digit ('0'-'9').")
+    public OneOrMoreUpperCaseAttribute()
+        : base("'{0}' must have at least one uppercase ('A'-'Z').")
     {
 
     }
@@ -52,8 +53,8 @@ public class OneOrMoreDigitsAttribute : ValidationAttribute
             return false;
         }
 
-        // Does the property have at least one digit?
-        if (!Regex.IsMatch($"{value}", "\\d+"))
+        // Does the property have at least one upper case?
+        if (!Regex.IsMatch($"{value}", "^.*[A-Z].*$"))
         {
             // The property is not valid.
             return false;
