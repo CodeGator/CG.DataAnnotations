@@ -55,12 +55,12 @@ namespace System.ComponentModel.DataAnnotations
             }
             else if (value is string)
             {
-                var list = (value as string).Split(';');
+                var list = (value as string)?.Split(';');
                 return (list != null && list.All(phone => phoneAttribute.IsValid(phone)));
             }
             else
             {
-                base.ErrorMessage = $"The property type: '{value.GetType().Name}' can't be validated";
+                base.ErrorMessage = $"The property type: '{value?.GetType().Name}' can't be validated";
                 return false;
             }
         }
