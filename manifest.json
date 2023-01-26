@@ -14,6 +14,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataAnnotations.OneOrMoreDigitsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html",
+          "hash": "KbLB5V8thOlHMXGM09SmC6ny4De3EM1C4kw4cgp2JqY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataAnnotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataAnnotations.html",
+          "hash": "TsfSyGnO3jijK70/oPd+Jc/b2dth57ra35zQG70I+D0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/System.ComponentModel.DataAnnotations.EmailAddressListAttribute.yml",
       "output": {
         ".html": {
@@ -66,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "FoWRGykczmnTZFlRcj7w4mp1aC+u9zKjqJ0F4zV3ykQ="
+          "hash": "+R9GB2aSP15UXpUpcbIY8yqnJF/XP9gazNLoDyFD+Vo="
         }
       },
       "is_incremental": false,
@@ -114,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "ETNZiCRvK+fhUjyepVvwdhCQr6a2Tt6/oJngdz/57Ac="
+          "hash": "u1TNfW4+ctHQSkp0odOsNwsMFolPeXSqlwULFfMUMk4="
         }
       },
       "is_incremental": false,
@@ -141,7 +165,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

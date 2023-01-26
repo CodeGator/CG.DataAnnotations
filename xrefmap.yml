@@ -1,6 +1,57 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CG.DataAnnotations
+  name: CG.DataAnnotations
+  href: api/CG.DataAnnotations.html
+  commentId: N:CG.DataAnnotations
+  fullName: CG.DataAnnotations
+  nameWithType: CG.DataAnnotations
+- uid: CG.DataAnnotations.OneOrMoreDigitsAttribute
+  name: OneOrMoreDigitsAttribute
+  href: api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html
+  commentId: T:CG.DataAnnotations.OneOrMoreDigitsAttribute
+  fullName: CG.DataAnnotations.OneOrMoreDigitsAttribute
+  nameWithType: OneOrMoreDigitsAttribute
+- uid: CG.DataAnnotations.OneOrMoreDigitsAttribute.#ctor
+  name: OneOrMoreDigitsAttribute()
+  href: api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html#CG_DataAnnotations_OneOrMoreDigitsAttribute__ctor
+  commentId: M:CG.DataAnnotations.OneOrMoreDigitsAttribute.#ctor
+  fullName: CG.DataAnnotations.OneOrMoreDigitsAttribute.OneOrMoreDigitsAttribute()
+  nameWithType: OneOrMoreDigitsAttribute.OneOrMoreDigitsAttribute()
+- uid: CG.DataAnnotations.OneOrMoreDigitsAttribute.#ctor*
+  name: OneOrMoreDigitsAttribute
+  href: api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html#CG_DataAnnotations_OneOrMoreDigitsAttribute__ctor_
+  commentId: Overload:CG.DataAnnotations.OneOrMoreDigitsAttribute.#ctor
+  isSpec: "True"
+  fullName: CG.DataAnnotations.OneOrMoreDigitsAttribute.OneOrMoreDigitsAttribute
+  nameWithType: OneOrMoreDigitsAttribute.OneOrMoreDigitsAttribute
+- uid: CG.DataAnnotations.OneOrMoreDigitsAttribute.FormatErrorMessage(System.String)
+  name: FormatErrorMessage(String)
+  href: api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html#CG_DataAnnotations_OneOrMoreDigitsAttribute_FormatErrorMessage_System_String_
+  commentId: M:CG.DataAnnotations.OneOrMoreDigitsAttribute.FormatErrorMessage(System.String)
+  fullName: CG.DataAnnotations.OneOrMoreDigitsAttribute.FormatErrorMessage(System.String)
+  nameWithType: OneOrMoreDigitsAttribute.FormatErrorMessage(String)
+- uid: CG.DataAnnotations.OneOrMoreDigitsAttribute.FormatErrorMessage*
+  name: FormatErrorMessage
+  href: api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html#CG_DataAnnotations_OneOrMoreDigitsAttribute_FormatErrorMessage_
+  commentId: Overload:CG.DataAnnotations.OneOrMoreDigitsAttribute.FormatErrorMessage
+  isSpec: "True"
+  fullName: CG.DataAnnotations.OneOrMoreDigitsAttribute.FormatErrorMessage
+  nameWithType: OneOrMoreDigitsAttribute.FormatErrorMessage
+- uid: CG.DataAnnotations.OneOrMoreDigitsAttribute.IsValid(System.Object)
+  name: IsValid(Object)
+  href: api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html#CG_DataAnnotations_OneOrMoreDigitsAttribute_IsValid_System_Object_
+  commentId: M:CG.DataAnnotations.OneOrMoreDigitsAttribute.IsValid(System.Object)
+  fullName: CG.DataAnnotations.OneOrMoreDigitsAttribute.IsValid(System.Object)
+  nameWithType: OneOrMoreDigitsAttribute.IsValid(Object)
+- uid: CG.DataAnnotations.OneOrMoreDigitsAttribute.IsValid*
+  name: IsValid
+  href: api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html#CG_DataAnnotations_OneOrMoreDigitsAttribute_IsValid_
+  commentId: Overload:CG.DataAnnotations.OneOrMoreDigitsAttribute.IsValid
+  isSpec: "True"
+  fullName: CG.DataAnnotations.OneOrMoreDigitsAttribute.IsValid
+  nameWithType: OneOrMoreDigitsAttribute.IsValid
 - uid: System.ComponentModel.DataAnnotations
   name: System.ComponentModel.DataAnnotations
   href: api/System.ComponentModel.DataAnnotations.html

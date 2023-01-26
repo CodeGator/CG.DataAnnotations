@@ -1,4 +1,14 @@
 {
+  "api/CG.DataAnnotations.html": {
+    "href": "api/CG.DataAnnotations.html",
+    "title": "Namespace CG.DataAnnotations",
+    "keywords": "Namespace CG.DataAnnotations Classes OneOrMoreDigitsAttribute This class validates a property that should contain one or more digits."
+  },
+  "api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html": {
+    "href": "api/CG.DataAnnotations.OneOrMoreDigitsAttribute.html",
+    "title": "Class OneOrMoreDigitsAttribute",
+    "keywords": "Class OneOrMoreDigitsAttribute This class validates a property that should contain one or more digits. Inheritance System.Object OneOrMoreDigitsAttribute Namespace : CG.DataAnnotations Assembly : CG.DataAnnotations.dll Syntax public class OneOrMoreDigitsAttribute : ValidationAttribute Constructors OneOrMoreDigitsAttribute() This constructor creates a new instance of the OneOrMoreDigitsAttribute class. Declaration public OneOrMoreDigitsAttribute() Methods FormatErrorMessage(String) This method applies formatting to an error message. Declaration public override string FormatErrorMessage(string name) Parameters Type Name Description System.String name The name to include in the formatted message. Returns Type Description System.String An instance of the formatted error message. IsValid(Object) This method determines whether the specified value of the object is valid, or not. Declaration public override bool IsValid(object value) Parameters Type Name Description System.Object value The value of the object to validate. Returns Type Description System.Boolean true if the specified value is valid; false otherwise."
+  },
   "api/System.ComponentModel.DataAnnotations.EmailAddressListAttribute.html": {
     "href": "api/System.ComponentModel.DataAnnotations.EmailAddressListAttribute.html",
     "title": "Class EmailAddressListAttribute",
